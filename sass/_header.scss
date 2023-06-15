@@ -1,0 +1,165 @@
+.header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-image: url(../images/william-daigneault-Cd84YdL9px8-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: $white;
+
+  @media only screen and (max-width:$bp-large){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 8rem;
+    @media screen and (max-width: $bp-largest) {
+      left: 6%;
+    }
+    @media only screen and (max-width:$bp-large){
+      position:static;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 1fr 1fr;
+      left:auto
+    }
+  }
+  &__title {
+    visibility: hidden;
+    transform: translateY(10px);
+    .heading-1 {
+      animation: fade-inY 1s forwards;
+      animation-delay: 0.6s;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    img:nth-child(1) {
+      animation-delay: 1.9s;
+    }
+    img:nth-child(2) {
+      animation-delay: 1.6s;
+    }
+    img:nth-child(3) {
+      animation-delay: 1.3s;
+    }
+    img:nth-child(4) {
+      animation-delay: 1s;
+    }
+  }
+  &__icon {
+    height: 3rem;
+    width: 3rem;
+    animation: fade-inY 1s forwards;
+    &:not(:last-of-type) {
+      margin-right: 1.7rem;
+    }
+  }
+  .nav {
+    align-self: end;
+
+    margin-bottom: -2rem;
+    @media only screen and (max-width:$bp-large){
+      justify-self: center;
+    }
+    &__list {
+      line-height: 2.3;
+      letter-spacing: 2px;
+      visibility: hidden;
+      @media only screen and (max-width:$bp-large){
+        padding-left: 2rem;
+      }
+      li:nth-child(3) {
+        animation-delay: 1.9s;
+      }
+      li:nth-child(2) {
+        animation-delay: 1.6s;
+      }
+      li:nth-child(1) {
+        animation-delay: 1.3s;
+      }
+    }
+    &__item {
+      font-family: "Poppins", serif;
+      text-transform: uppercase;
+      animation: fade-inX 1s ease forwards;
+      font-weight: 400;
+      list-style-type: none;
+      position: relative;
+      transition: all 0.7s ease;
+      z-index: 2;
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+        font-size: 1.5rem;
+      }
+     
+    }
+
+    @keyframes identifier {
+    }
+    &__item::before {
+      content: "";
+      transition: width 0.5s ease;
+      width: 0;
+      z-index: 0;
+    }
+    &__item:hover {
+      a {
+        color: $darkBlue;
+      }
+    }
+    &__item:hover::before {
+      content: "";
+      transition: width 0.5s ease;
+      position: absolute;
+      top: 0;
+      left: -1rem;
+      height: 3rem;
+      z-index: -1;
+      width: 15rem;
+      background: linear-gradient(to right, $white 40%, transparent 100%);
+      transform: skew(-20deg);
+    }
+  }
+}
+.fixedNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 60px;
+  background-color: var(--color-primary);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+  ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 1.5rem;
+  }
+  li {
+    margin-right: 1rem;
+  }
+  .nav__item:hover::before {
+    content: none;
+  }
+  a {
+    font-size: 1.2rem !important;
+    letter-spacing: 1px;
+  }
+}

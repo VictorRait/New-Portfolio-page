@@ -1,0 +1,109 @@
+.about {
+    min-height:60vh;
+    width:100%;
+    background-color: $white;
+    color:$white;
+    padding:8rem 1rem 2rem 1rem;
+    text-align: center;
+    &__container{
+  
+        width:80%;
+        height: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        align-items: center;
+        justify-content: center;
+        outline: 5px solid var(--color-primary);
+        outline-offset: 2rem;
+        
+        @media only screen and (max-width:$bp-large){
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr;
+          }
+
+    }
+    &__image {
+        grid-column:  1 / 2;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: hidden;
+
+        @media only screen and (max-width:$bp-large){
+            grid-column:  1 / 2;
+            grid-row: 1 / 2;
+            width:16rem;
+            align-self: center;
+            justify-self: center;
+          }
+          @media only screen and (max-width:$bp-small) {
+           width:14rem;
+          }
+    }
+    &__text {
+        grid-column:  2 /3;
+        color: var(--color-secondary);
+        text-align: left;
+        margin-left: -4rem;
+        @media only screen and (max-width:$bp-large){
+        
+            text-align: center;
+            grid-column:  1 / 2;
+            grid-row: 2 / 3;
+            margin-left: 0rem;
+          }
+    }
+}
+
+.slide {
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .6s, opacity 1s ease-in-out, visibility .8s ease-in-out, width 0.1s ;
+    transform: translateX(5px);
+    width:0;
+
+    img {
+        width: clamp(10rem, 30vw, 30rem);
+        @media only screen and (max-width:$bp-small) {
+            width:14rem;
+           }
+    }
+}
+.activeSlide {
+    opacity: 1;
+    
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+.button {
+    border:none;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    background:transparent;
+    cursor: pointer;
+
+}
+.btn-text {
+    transition: transform .4s;
+    transform: translateY(0rem);
+    border-bottom: 2px solid  var(--color-primary);
+
+    a{
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        color:var(--color-primary);
+    }
+
+   
+
+}
+.btn-text:hover{
+    transform: translateY(5px);
+}
+.see-works {
+    padding-top:5rem;
+}

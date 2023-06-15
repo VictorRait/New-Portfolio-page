@@ -1,0 +1,59 @@
+@font-face {
+  font-family: rogie;
+  src: url(../rogie-font/Rogie-jEXrO.ttf);
+}
+:root {
+  --color-primary: #fac000;
+  --color-secondary: #0e0804;
+}
+
+$bp-largest: 68.75em; // 1100px
+$bp-large:59.375em; // 950px 
+$bp-medium: 40.625em; // 650px
+$bp-small: 28.125em; //450px
+html {
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 80%;
+  }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 60%;
+  }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 52.6%;
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: inherit;
+}
+
+.hidden {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+.section {
+  transition: all 0.8s ease;
+  transition-delay: 0.5s;
+
+  opacity: 1;
+}
+
+.section--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(1rem);
+
+  img {
+    visibility: hidden;
+  }
+}
