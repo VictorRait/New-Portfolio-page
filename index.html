@@ -157,14 +157,21 @@
     <div class="footer__form-container">
     
         
-      <form class="footer__form" action="https://formspree.io/f/xyyqzood" method="post" enctype="text/plain">
-        Email:<br>
-        <input type="email" name="email" placeholder="Your Email" ><br>
-        Message:<br>
-        <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
-        <input type="submit" value="Send">
-       
-      </form>
+              <form
+            action="https://formspree.io/f/xyyqzood"
+            method="POST"
+              >
+            <label>
+              Your email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+          
+            <button type="submit">Send</button>
+          </form>
     </div>
   </body>
   <attribution style="display: none">
