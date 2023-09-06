@@ -173,8 +173,9 @@
     color: white;
     text-decoration: none;
   }
-  &:hover {
-    opacity: .8;
+  a:hover {
+    opacity: .5;
+    color:var(--color-primary)
   }
 }
 .overlay {

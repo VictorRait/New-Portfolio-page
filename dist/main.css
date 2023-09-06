@@ -589,8 +589,9 @@ p {
   color: white;
   text-decoration: none;
 }
-.see-live-btn:hover {
-  opacity: 0.8;
+.see-live-btn a:hover {
+  opacity: 0.5;
+  color: var(--color-primary);
 }
 
 .overlay {
