@@ -173,6 +173,9 @@
     color: white;
     text-decoration: none;
   }
+  &:hover {
+    opacity: .8;
+  }
 }
 .overlay {
   visibility: hidden;
@@ -225,8 +228,8 @@
     color: var(--color-primary);
   }
 }
-.back-btn {
-}
+// .back-btn {
+// }
 .see-more-btn {
   a {
     padding-bottom: 3px;
