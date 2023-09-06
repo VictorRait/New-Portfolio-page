@@ -180,18 +180,22 @@ p {
   justify-content: end;
 }
 .header__icons img:nth-child(1) {
+  -webkit-animation-delay: 2.1s;
+          animation-delay: 2.1s;
+}
+.header__icons img:nth-child(2) {
   -webkit-animation-delay: 1.9s;
           animation-delay: 1.9s;
 }
-.header__icons img:nth-child(2) {
+.header__icons img:nth-child(3) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
-.header__icons img:nth-child(3) {
+.header__icons img:nth-child(4) {
   -webkit-animation-delay: 1.3s;
           animation-delay: 1.3s;
 }
-.header__icons img:nth-child(4) {
+.header__icons img:nth-child(5) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
@@ -585,6 +589,9 @@ p {
   color: white;
   text-decoration: none;
 }
+.see-live-btn:hover {
+  opacity: 0.8;
+}
 
 .overlay {
   visibility: hidden;
@@ -751,5 +758,6 @@ p {
   margin-bottom: 1rem;
 }
 .footer__form button {
-  align-self: start;
+  align-self: end;
+  margin-top: 10px;
 }/*# sourceMappingURL=main.css.map */
