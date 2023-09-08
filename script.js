@@ -47,7 +47,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
     }
       if (this.getAttribute('href') === '#') return
-      console.log(!this.getAttribute('href').startsWith('http'));
+      // console.log(!this.getAttribute('href').startsWith('http'));
     
      
   });
@@ -137,10 +137,10 @@ moreBtns.forEach(btn => {
 })
 const showMoreBtns = function(){
   
-  if (workSlide > 2) {
+  if (workSlide > 1) {
     backBtn.classList.remove('hidden')
    }
-   else {
+  if (workSlide === 0) {
     backBtn.classList.add('hidden')
    }
 
@@ -161,13 +161,14 @@ const showMoreBtns = function(){
 const slidesTranslate = function(){
   slide2All.forEach((slide, idx) => {
  
-    if (!slide.classList.contains('.see-live'))
+    if (!slide.classList.contains('see-live'))
      slide2All[idx].style.transform = `translateX(-${workSlide * 38}rem)`
   })
 }
 
 backBtn.addEventListener('click', function(){
   workSlide = 0;
+  backBtn.classList.add('hidden')
   slidesTranslate()
 })
 const maxSlide = function () {
@@ -175,16 +176,24 @@ const maxSlide = function () {
   if (workSlide < 0) {
     workSlide = 0;
   }
-  if (workSlide > slide2All.length) workSlide = slide2All.length - 1;
+  if (workSlide > slide2All.length) workSlide = 0;
 };
 arrowRight.addEventListener("click", function () {
-  workSlide++;
-
-  maxSlide();
   // workSlider.style.transform = `translateX(-${workSlide * 38}rem)`;
-  removeLive()
-  slidesTranslate()
+  workSlide++;
+  
+  
+  maxSlide();
   showMoreBtns()
+  if ([...slide2All].map(slide => slide.classList[0]).includes('see-live')){
+    setTimeout(() => slidesTranslate(), 450 )
+  }
+  else {
+    slidesTranslate()
+  }
+  
+  removeLive()
+ 
 });
 arrowLeft.addEventListener("click", function () {
   workSlide--;

@@ -590,7 +590,6 @@ p {
   text-decoration: none;
 }
 .see-live-btn a:hover {
-  opacity: 0.5;
   color: var(--color-primary);
 }
 

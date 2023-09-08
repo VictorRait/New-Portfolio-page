@@ -172,9 +172,10 @@
     cursor: pointer;
     color: white;
     text-decoration: none;
+    // transform: translateY(0);
   }
   a:hover {
-    opacity: .5;
+    // transform: translateY(50%);
     color:var(--color-primary)
   }
 }
