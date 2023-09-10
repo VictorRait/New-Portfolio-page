@@ -323,8 +323,8 @@ p {
 .about {
   min-height: 60vh;
   width: 100%;
-  background-color: #fff;
-  color: #fff;
+  background-color: beige;
+  color: rgb(250, 250, 233);
   padding: 8rem 1rem 2rem 1rem;
   text-align: center;
 }
@@ -432,11 +432,15 @@ p {
 
 .works {
   height: 60rem;
-  background-image: url(../images/art-lasovsky-8XddFc6NkBY-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: grey;
-  background-blend-mode: multiply;
+  overflow: hidden;
+}
+.works-bg {
+  position: absolute;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
 }
 .works__container {
   height: 100%;
@@ -666,7 +670,7 @@ p {
 .footer {
   height: 15rem;
   width: auto;
-  background: #fff;
+  background: rgb(250, 250, 233);
   padding: 2rem 4rem 1.5rem 4rem;
   filter: brightness(0.95);
 }

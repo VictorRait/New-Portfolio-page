@@ -1,11 +1,19 @@
 .works {
   height: 60rem;
-  background-image: url(../images/art-lasovsky-8XddFc6NkBY-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  background-color: grey;
-  background-blend-mode: multiply;
+  // background-image: url(../images/art-lasovsky-8XddFc6NkBY-unsplash.jpg);
+  // background-size: cover;
+  // background-position: center;
+  // background-color: grey;
+  // background-blend-mode: multiply;
+  overflow: hidden;
+  &-bg {
+    position:absolute;
+    width:100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(0.5);
 
+  }
   &__container {
     height: 100%;
     width: 100%;
