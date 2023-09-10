@@ -437,6 +437,7 @@ p {
 .works-bg {
   position: absolute;
   width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
