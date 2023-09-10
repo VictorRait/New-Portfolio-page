@@ -15,13 +15,16 @@
     justify-content: center;
   }
   &-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  & .lazy-img {
+    position:absolute;
+   width:100%;
+   height:100%;
+   object-fit: cover;
+
+
+    & .lazy-img {
     filter: blur(10px);
   }
+}
   &__container {
     position: absolute;
     top: 25%;

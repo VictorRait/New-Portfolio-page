@@ -145,8 +145,10 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.header .lazy-img {
+.header-bg .lazy-img {
   filter: blur(10px);
 }
 .header__container {
@@ -433,15 +435,20 @@ p {
 .works {
   height: 60rem;
   overflow: hidden;
+  position: relative;
 }
 .works-bg {
   position: absolute;
+  overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
-  z-index: -1;
+  z-index: -2;
   filter: brightness(0.5);
+}
+.works-bg .lazy-img {
+  filter: blur(10px);
 }
 .works__container {
   height: 100%;
