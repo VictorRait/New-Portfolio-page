@@ -24,6 +24,26 @@ const navObs = new IntersectionObserver(moveNav, {
   threshold: 0,
  
 })
+///////////////////////////// Lazy load 
+
+const imgTargets = document.querySelectorAll('img[data-src]')
+
+const loadImg = function (entries, observer) {
+  const [entry] = entries
+  if (!entry.isIntersecting) return
+  entry.target.classList.remove('lazy-img')
+  entry.target.src = entry.target.dataset.src 
+};
+const imgObserver = new IntersectionObserver(loadImg, {
+  root: null,
+  threshold:0
+})
+imgTargets.forEach(img => { 
+  console.log('fire');
+  imgObserver.observe(img)})
+
+
+
 
 navObs.observe(header)
 const section1 = document.querySelector('#section--1')
