@@ -1,267 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victor's Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./dist/main.css" />
-    <script defer src="./script.js"></script>
-  </head>
-  <body>
-    <div class="overlay">
-      <div class="overlay__close">x</div>
-    </div>
-    <div class="see-live-btn">
-      <p class="see-live__description"></p>
-      <span>See <a href="#">live</a></span>
-    </div>
-    <header class="header">
-      <img class="lazy-img header-bg" src="./images/blur background.png" data-src="./images/william-daigneault-Cd84YdL9px8-unsplash.jpg">
-      <div class="header__container">
-        <div class="header__title">
-          <h1 class="heading-1">Welcome</h1>
-          <div class="header__icons">
-            <img class="header__icon" src="./images/react.svg" alt="react" />
-            <img class="header__icon" src="./images/javascript.svg" alt="javascript" />
-            <img class="header__icon" src="./images/html.svg" alt="html" />
-            <img class="header__icon" src="./images/css.svg" alt="css" />
-            <img class="header__icon" src="./images/sass.svg" alt="sass" />
-            <img class="header__icon" src="./images/icons8-wordpress.svg" alt="wordpress" />
-          </div>
-        </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__item"><a id="nav__about">About</a></li>
-            <li class="nav__item"><a href="#section--2">Works</a></li>
-            <li class="nav__item"><a href="#footer">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="section about" id="section--1">
-    
-      <div class="about__container">
-        <div class="about__image slides">
-          <div class="slide activeSlide">
-            <img src="./images/slide-1.jpg" alt="plant" />
-          </div>
-          <div class="slide">
-            <img src="./images/slide-2.jpg" alt="plant" />
-          </div>
-          <div class="slide">
-            <img src="./images/slide-3.jpg" alt="plant" />
-          </div>
-        </div>
-        <div class="about__text">
-          <h5 class="heading-5">Hi! I'm Victor</h5>
-          <p>
-            A self taught web developer. Always trying to improve. Focusing now my front-end
-            development skills. Below are some of my works if you like it. Let's work together!
-          </p>
-        </div>
-      </div>
-      <button class="button btn-text see-works"><a href="#section--2">See works &darr;</a></button>
-    </section>
-    <section class="works section" id="section--2">
-      <img class="lazy-img works-bg" src="./images/blur bg works.png" data-src="./images/art-lasovsky-8XddFc6NkBY-unsplash.jpg">
-      <div class="works__container">
-        <h6 class="heading-6">Most recent</h6>
-        <div class="slider2-container">
-          <div class="works__slider">
-            <div
-              data-description="react app uses API"
-              data-url="https://victorrait.github.io/usePopCorn/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/usePopCorn.png" alt="usePopCorn" />
-            </div>
-            <div
-              data-description="Small react app applied useReducer"
-              data-url="https://victorrait.github.io/react-quiz/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/react-quiz.png" alt="React quiz" />
-            </div>
-            <div
-              data-description="Blog Site (Wordpress)"
-              data-url="https://ephemeral-khapse-7d5c10.netlify.app/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/blog site.png" alt="Blog site" />
-            </div>
-            <div
-              data-description="Corporate Business Site (Wordpress)"
-              data-url="https://prismatic-gecko-5a57f8.netlify.app"
-              class="slide2"
-            >
-              <img
-                src="./images/site screenshots/Corporate Business Site.png"
-                alt="Business site"
-              />
-            </div>
-            <div
-              data-description="Personal site Wordpress"
-              data-url="https://tubular-cupcake-40778b.netlify.app/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/wordpress personal site.png" alt="Forkify" />
-            </div>
-            <div
-              data-description="Forkify app"
-              data-url="https://64ad054eb10e1f4de7af59d1--wondrous-otter-c21d4b.netlify.app/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/forkify.png" alt="Forkify" />
-            </div>
-            <div
-              data-description="(Responsive) 4-page site"
-              data-url="https://victorrait.github.io/Space-tourism/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/Space Tourism.png" alt="Space tourism" />
-            </div>
-            <div
-              data-description="(Responsive) Trillo"
-              data-url="https://64f6ff50d2a681091e2d4335--coruscating-starship-311b2d.netlify.app/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/trillo.png" alt="Trillo" />
-            </div>
-            <div
-              data-description="(Responsive) Easybank Landing Page"
-              data-url="https://victorrait.github.io/Easybank/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/Easybank2.jpg" alt="Easybank" />
-            </div>
-            <div
-              data-description="Bankist Landing Page"
-              data-url="https://victorrait.github.io/Bankist/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/bankist.png" alt="Bankist" />
-            </div>
-            <div
-              data-description="(Responsive) Sunnyside Landing Page"
-              data-url="https://victorrait.github.io/Sunnyside_landing/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/sunnside.png" alt="Sunnyside" />
-            </div>
-            <div
-              data-description="(Responsive nav-drop-down) Snap Landing Page"
-              data-url="https://victorrait.github.io/Intro-with-dropdown-nav/"
-              class="slide2"
-            >
-              <img
-                src="./images/site screenshots/intro-nav-dropdown.png"
-                alt="Intro with nav dropdown"
-              />
-            </div>
-            <div
-              data-description="(Responsive) Sign up Page "
-              data-url="https://victorrait.github.io/Intro-sign-up/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/intro-with-signup.png" alt="Intro with sign up" />
-            </div>
-            <div
-              data-description="Product preview page"
-              data-url="https://victorrait.github.io/Product-Preview-Page/"
-              class="slide2"
-            >
-              <img src="./images/site screenshots/product_preview_page.png" alt="Product preview" />
-            </div>
-          </div>
-          <div class="btn-container">
-            <button class="slider__arrow slider__arrow--left">
-              <img src="./images/icons8-arrow-64.png" alt="" />
-            </button>
-          </div>
-          <div class="btn-container">
-            <button class="slider__arrow slider__arrow--right">
-              <img src="./images/icons8-arrow-64.png" alt="" />
-            </button>
-          </div>
-          <div class="more-buttons">
-            <div class="back-btn"><a>&larr; Back to start</a></div>
-            <div class="see-more-btn"><a href="https://github.com/VictorRait">See more</a></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer id="footer" class="footer">
-      <div class="yellow__lines"></div>
-      <div class="footer__container">
-        <p>Contact me:</p>
-        <ul class="footer__lists">
-          <li>
-            <a
-              href="https://www.facebook.com/people/Victor-Rait/pfbid0nzWuAtuZfA4Ect6epRxSuGkMQmb879XPSm8xzGA8T2bHce8bRjhcREnsUk2DM7DUl/"
-              >Facebook</a
-            ><img src="./images/facebook.png" alt="" />
-          </li>
-          <li>
-            <a href="https://github.com/VictorRait">Github</a
-            ><img src="./images/github.png" alt="" />
-          </li>
-          <li class="email-btn">
-            <a href="#footer">Email</a><img src="./images/email.png" alt="" />
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <div class="footer__form-container">
-      <form class="footer__form" action="https://formspree.io/f/xyyqzood" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email" /> </label
-        ><br />
-        <label>
-          Your message:
-          <textarea name="message"></textarea>
-        </label>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Victor's Portfolio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./dist/main.css" />
+		<script defer src="./script.js"></script>
+	</head>
+	<body>
+		<div class="overlay">
+			<div class="overlay__close">x</div>
+		</div>
+		<div class="see-live-btn">
+			<p class="see-live__description"></p>
+			<span>See <a href="#">live</a></span>
+		</div>
+		<header class="header">
+			<img
+				class="lazy-img header-bg"
+				src="./images/blur background.png"
+				data-src="./images/william-daigneault-Cd84YdL9px8-unsplash.jpg" />
+			<div class="header__container">
+				<div class="header__title">
+					<h1 class="heading-1">Welcome</h1>
+					<div class="header__icons">
+						<img class="header__icon" src="./images/react.svg" alt="react" />
+						<img
+							class="header__icon"
+							src="./images/javascript.svg"
+							alt="javascript" />
+						<img class="header__icon" src="./images/html.svg" alt="html" />
+						<img class="header__icon" src="./images/css.svg" alt="css" />
+						<img class="header__icon" src="./images/sass.svg" alt="sass" />
+						<img
+							class="header__icon"
+							src="./images/icons8-wordpress.svg"
+							alt="wordpress" />
+					</div>
+				</div>
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__item"><a id="nav__about">About</a></li>
+						<li class="nav__item"><a href="#section--2">Works</a></li>
+						<li class="nav__item"><a href="#footer">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="section about" id="section--1">
+			<div class="about__container">
+				<div class="about__image slides">
+					<div class="slide activeSlide">
+						<img src="./images/slide-1.jpg" alt="plant" />
+					</div>
+					<div class="slide">
+						<img src="./images/slide-2.jpg" alt="plant" />
+					</div>
+					<div class="slide">
+						<img src="./images/slide-3.jpg" alt="plant" />
+					</div>
+				</div>
+				<div class="about__text">
+					<h5 class="heading-5">Hi! I'm Victor</h5>
+					<p>
+						A self taught web developer. Always trying to improve. Focusing now
+						my front-end development skills. Below are some of my works if you
+						like it. Let's work together!
+					</p>
+				</div>
+			</div>
+			<button class="button btn-text see-works">
+				<a href="#section--2">See works &darr;</a>
+			</button>
+		</section>
+		<section class="works section" id="section--2">
+			<img
+				class="lazy-img works-bg"
+				src="./images/blur bg works.png"
+				data-src="./images/art-lasovsky-8XddFc6NkBY-unsplash.jpg" />
+			<div class="works__container">
+				<h6 class="heading-6">Most recent</h6>
+				<div class="slider2-container">
+					<div class="works__slider">
+						<div
+							data-description="Track your adventures around the world"
+							data-url="https://victorrait.github.io/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/usePopCorn.png"
+								alt="usePopCorn" />
+						</div>
+						<div
+							data-description="Rate your favorite movies"
+							data-url="https://victorrait.github.io/usePopCorn/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/usePopCorn.png"
+								alt="usePopCorn" />
+						</div>
+						<div
+							data-description="Small react app applied useReducer"
+							data-url="https://victorrait.github.io/react-quiz/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/react-quiz.png"
+								alt="React quiz" />
+						</div>
+						<div
+							data-description="Blog Site (Wordpress)"
+							data-url="https://ephemeral-khapse-7d5c10.netlify.app/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/blog site.png"
+								alt="Blog site" />
+						</div>
+						<div
+							data-description="Corporate Business Site (Wordpress)"
+							data-url="https://prismatic-gecko-5a57f8.netlify.app"
+							class="slide2">
+							<img
+								src="./images/site screenshots/Corporate Business Site.png"
+								alt="Business site" />
+						</div>
+						<div
+							data-description="Personal site Wordpress"
+							data-url="https://tubular-cupcake-40778b.netlify.app/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/wordpress personal site.png"
+								alt="Forkify" />
+						</div>
+						<div
+							data-description="Forkify app"
+							data-url="https://64ad054eb10e1f4de7af59d1--wondrous-otter-c21d4b.netlify.app/"
+							class="slide2">
+							<img src="./images/site screenshots/forkify.png" alt="Forkify" />
+						</div>
+						<div
+							data-description="(Responsive) 4-page site"
+							data-url="https://victorrait.github.io/Space-tourism/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/Space Tourism.png"
+								alt="Space tourism" />
+						</div>
+						<div
+							data-description="(Responsive) Trillo"
+							data-url="https://64f6ff50d2a681091e2d4335--coruscating-starship-311b2d.netlify.app/"
+							class="slide2">
+							<img src="./images/site screenshots/trillo.png" alt="Trillo" />
+						</div>
+						<div
+							data-description="(Responsive) Easybank Landing Page"
+							data-url="https://victorrait.github.io/Easybank/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/Easybank2.jpg"
+								alt="Easybank" />
+						</div>
+						<div
+							data-description="Bankist Landing Page"
+							data-url="https://victorrait.github.io/Bankist/"
+							class="slide2">
+							<img src="./images/site screenshots/bankist.png" alt="Bankist" />
+						</div>
+						<div
+							data-description="(Responsive) Sunnyside Landing Page"
+							data-url="https://victorrait.github.io/Sunnyside_landing/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/sunnside.png"
+								alt="Sunnyside" />
+						</div>
+						<div
+							data-description="(Responsive nav-drop-down) Snap Landing Page"
+							data-url="https://victorrait.github.io/Intro-with-dropdown-nav/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/intro-nav-dropdown.png"
+								alt="Intro with nav dropdown" />
+						</div>
+						<div
+							data-description="(Responsive) Sign up Page "
+							data-url="https://victorrait.github.io/Intro-sign-up/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/intro-with-signup.png"
+								alt="Intro with sign up" />
+						</div>
+						<div
+							data-description="Product preview page"
+							data-url="https://victorrait.github.io/Product-Preview-Page/"
+							class="slide2">
+							<img
+								src="./images/site screenshots/product_preview_page.png"
+								alt="Product preview" />
+						</div>
+					</div>
+					<div class="btn-container">
+						<button class="slider__arrow slider__arrow--left">
+							<img src="./images/icons8-arrow-64.png" alt="" />
+						</button>
+					</div>
+					<div class="btn-container">
+						<button class="slider__arrow slider__arrow--right">
+							<img src="./images/icons8-arrow-64.png" alt="" />
+						</button>
+					</div>
+					<div class="more-buttons">
+						<div class="back-btn"><a>&larr; Back to start</a></div>
+						<div class="see-more-btn">
+							<a href="https://github.com/VictorRait">See more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="footer">
+			<div class="yellow__lines"></div>
+			<div class="footer__container">
+				<p>Contact me:</p>
+				<ul class="footer__lists">
+					<li>
+						<a
+							href="https://www.facebook.com/people/Victor-Rait/pfbid0nzWuAtuZfA4Ect6epRxSuGkMQmb879XPSm8xzGA8T2bHce8bRjhcREnsUk2DM7DUl/"
+							>Facebook</a
+						><img src="./images/facebook.png" alt="" />
+					</li>
+					<li>
+						<a href="https://github.com/VictorRait">Github</a
+						><img src="./images/github.png" alt="" />
+					</li>
+					<li class="email-btn">
+						<a href="#footer">Email</a><img src="./images/email.png" alt="" />
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<div class="footer__form-container">
+			<form
+				class="footer__form"
+				action="https://formspree.io/f/xyyqzood"
+				method="POST">
+				<label>
+					Your email:
+					<input type="email" name="email" /> </label
+				><br />
+				<label>
+					Your message:
+					<textarea name="message"></textarea>
+				</label>
 
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </body>
-  <attribution style="display: none">
-    <a target="_blank" href="https://icons8.com/icon/13664/wordpress">WordPress</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-    <a href="https://iconscout.com/icons/javascript" target="_blank">Free Javascript Icon</a> by
-    <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on
-    <a href="https://iconscout.com">IconScout</a>
-    <a href="https://iconscout.com/icons/html" target="_blank">Free Html Icon</a> by
-    <a href="https://iconscout.com/contributors/jagathish">Jagathish Saravanan</a> on
-    <a href="https://iconscout.com">IconScout</a>
-    <a href="https://iconscout.com/icons/css" target="_blank">Free Css Icon</a> by
-    <a href="https://iconscout.com/contributors/pixel-icons" target="_blank">Pixel Icons</a>
-    <a href="https://iconscout.com/icons/sass" target="_blank">Free Sass Icon</a> by
-    <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on
-    <a href="https://iconscout.com">IconScout</a>
-    <a
-      href="https://www.freepik.com/free-vector/company-employees-sharing-thoughts-ideas_8270975.htm#query=people%20working%20together%20cartoon&position=46&from_view=search&track=ais"
-      >Image by pch.vector</a
-    >
-    on Freepik <a target="_blank" href="https://icons8.com/icon/114107/go-back">arrow</a> icon by
-    <a target="_blank" href="https://icons8.com">Icons8</a>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</body>
+	<attribution style="display: none">
+		<a target="_blank" href="https://icons8.com/icon/13664/wordpress"
+			>WordPress</a
+		>
+		icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+		<a href="https://iconscout.com/icons/javascript" target="_blank"
+			>Free Javascript Icon</a
+		>
+		by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on
+		<a href="https://iconscout.com">IconScout</a>
+		<a href="https://iconscout.com/icons/html" target="_blank"
+			>Free Html Icon</a
+		>
+		by
+		<a href="https://iconscout.com/contributors/jagathish"
+			>Jagathish Saravanan</a
+		>
+		on
+		<a href="https://iconscout.com">IconScout</a>
+		<a href="https://iconscout.com/icons/css" target="_blank">Free Css Icon</a>
+		by
+		<a href="https://iconscout.com/contributors/pixel-icons" target="_blank"
+			>Pixel Icons</a
+		>
+		<a href="https://iconscout.com/icons/sass" target="_blank"
+			>Free Sass Icon</a
+		>
+		by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on
+		<a href="https://iconscout.com">IconScout</a>
+		<a
+			href="https://www.freepik.com/free-vector/company-employees-sharing-thoughts-ideas_8270975.htm#query=people%20working%20together%20cartoon&position=46&from_view=search&track=ais"
+			>Image by pch.vector</a
+		>
+		on Freepik
+		<a target="_blank" href="https://icons8.com/icon/114107/go-back">arrow</a>
+		icon by
+		<a target="_blank" href="https://icons8.com">Icons8</a>
 
-    <a href="https://www.flaticon.com/free-icons/github" title="github icons"
-      >Github icons created by riajulislam - Flaticon</a
-    >
-    <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons"
-      >Facebook icons created by Freepik - Flaticon</a
-    >
+		<a href="https://www.flaticon.com/free-icons/github" title="github icons"
+			>Github icons created by riajulislam - Flaticon</a
+		>
+		<a
+			href="https://www.flaticon.com/free-icons/facebook"
+			title="facebook icons"
+			>Facebook icons created by Freepik - Flaticon</a
+		>
 
-    <a href="https://www.flaticon.com/free-icons/email" title="email icons"
-      >Email icons created by Uniconlabs - Flaticon</a
-    >
-  </attribution>
+		<a href="https://www.flaticon.com/free-icons/email" title="email icons"
+			>Email icons created by Uniconlabs - Flaticon</a
+		>
+	</attribution>
 </html>
